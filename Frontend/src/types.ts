@@ -12,6 +12,8 @@ export type Warehouse = {
   id: string;
   name: string;
   location: string;
+  parentId?: string;
+  type?: 'Warehouse' | 'Rack' | 'Bin';
 };
 
 export type Stock = {
@@ -48,6 +50,7 @@ export type User = {
   email: string;
   name: string;
   role: Role;
+  avatarUrl?: string;
 };
 
 export type DashboardStats = {
